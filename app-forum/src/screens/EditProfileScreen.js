@@ -120,7 +120,6 @@ const EditProfileScreen = ({ route, navigation }) => {
         headers: { Authorization: `Bearer ${userToken}` }
       });
 
-      Alert.alert("Conta deletada", "Sua conta foi excluída com sucesso.");
       signOut();
 
     } catch (error) {
